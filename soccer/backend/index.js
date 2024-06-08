@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //route
-// routes(app);
+routes(app);
 
 app.get("/", (req, res) =>
   res.send(`Our application is running on port ${PORT}`)
