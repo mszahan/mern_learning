@@ -13,3 +13,12 @@ export const addNewPlayer = async (req, res) => {
     res.send(err);
   }
 };
+
+export const getPlayers = async (req, res) => {
+  try {
+    const players = await Player.find({});
+    res.json(players);
+  } catch (err) {
+    res.send(err);
+  }
+};
