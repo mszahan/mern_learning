@@ -1,4 +1,4 @@
-#### add babble first
+#### add babel first
 
 ```
 npm i --save-dev @babel/cli @babel/core @babel/node @babel/present-env
@@ -12,7 +12,7 @@ npm i body-parser cors express mongoose nodemon
 
 ```
 
-#### add .bablerc
+#### add .babelrc
 
 ```
 {
@@ -21,7 +21,7 @@ npm i body-parser cors express mongoose nodemon
 
 ```
 
-#### add .scripts
+#### add scripts
 
 ```
 "scripts": {
