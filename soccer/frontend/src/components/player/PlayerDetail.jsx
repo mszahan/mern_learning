@@ -1,13 +1,13 @@
-const PlayerDetail = (props) => {
+const PlayerDetail = ({ player }) => {
   return (
     <div>
       <h1>Player details</h1>
       <h4>
-        {props.player.firstName} {props.player.lastName}
+        {player.firstName} {player.lastName}
       </h4>
-      <p>{props.player.phone}</p>
-      <p>{props.player.email}</p>
-      <p>{props.player.team}</p>
+      <p>{player.phone}</p>
+      <p>{player.email}</p>
+      <p>{player.team}</p>
     </div>
   );
 };
