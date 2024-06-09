@@ -6,7 +6,10 @@ const PlayerList = (props) => {
         <ul>
           {props.players.map((player) => (
             <li key={player.id}>
-              <a href="#" onClick={props.updateCurrentPlayer.bind(this.player)}>
+              <a
+                href="#!"
+                onClick={props.updateCurrentPlayer.bind(this, player)}
+              >
                 {player.firstName} {player.lastName}
               </a>
             </li>
