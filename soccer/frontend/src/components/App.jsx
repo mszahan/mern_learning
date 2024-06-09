@@ -45,7 +45,7 @@ class App extends React.Component {
           />
         </div>
         <div className="player_detail">
-          <PlayerDetail />
+          <PlayerDetail player={this.state.currentPlayer} />
         </div>
         <div className="player_form">
           <PlayerForm />
