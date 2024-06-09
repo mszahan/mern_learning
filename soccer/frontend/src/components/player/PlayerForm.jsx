@@ -5,7 +5,7 @@ class PlayerForm extends React.Component {
   submitPlayer(event) {
     event.preventDefault();
     axios
-      .post("http:localhost:4000/players", {
+      .post("http://localhost:4000/players", {
         firstName: this.refs.firstName.value,
         lastName: this.refs.lastName.value,
         phone: this.refs.phone.value,
