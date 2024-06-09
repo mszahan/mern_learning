@@ -51,7 +51,7 @@ const PlayerForm = ({ addNewPlayer }) => {
 
   return (
     <div className="form">
-      <h1>Add new player</h1>
+      <h1 className="form_title">Add new player</h1>
       <form onSubmit={submitPlayer}>
         <div className="name">
           <div>
@@ -96,6 +96,8 @@ const PlayerForm = ({ addNewPlayer }) => {
               onChange={handleChange}
             />
           </div>
+        </div>
+        <div className="stats">
           <div>
             <label htmlFor="team">team</label>
             <input
@@ -167,7 +169,10 @@ const PlayerForm = ({ addNewPlayer }) => {
             />
           </div>
         </div>
-        <button type="submit">Add Player</button>
+
+        <button type="submit" className="submit-button">
+          Add Player
+        </button>
       </form>
     </div>
   );

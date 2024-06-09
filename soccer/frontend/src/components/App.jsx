@@ -33,17 +33,21 @@ const App = () => {
       <div className="title">
         <h4> Soccer Players </h4>
       </div>
-      <div className="player_list">
-        <PlayerList
-          players={players}
-          updateCurrentPlayer={updateCurrentPlayer}
-        />
-      </div>
-      <div className="player_detail">
-        <PlayerDetail player={currentPlayer} />
-      </div>
-      <div className="player_form">
-        <PlayerForm addNewPlayer={addNewPlayer} />
+      <div className="players">
+        <div className="player_list">
+          <PlayerList
+            players={players}
+            updateCurrentPlayer={updateCurrentPlayer}
+          />
+        </div>
+        <div className="player_info">
+          <div className="player_detail">
+            <PlayerDetail player={currentPlayer} />
+          </div>
+          <div className="player_form">
+            <PlayerForm addNewPlayer={addNewPlayer} />
+          </div>
+        </div>
       </div>
     </div>
   );

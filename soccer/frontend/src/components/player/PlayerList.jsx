@@ -1,12 +1,15 @@
 const PlayerList = ({ players, updateCurrentPlayer }) => {
   return (
-    <div>
-      <h1>Player List</h1>
+    <div className="list_container">
+      <h1 className="list_title">Player List</h1>
       <div className="plyers_name">
-        <ul>
+        <ul className="list_list">
           {players.map((player) => (
-            <li key={player._id}>
-              <a onClick={() => updateCurrentPlayer(player)}>
+            <li key={player._id} className="list_individual">
+              <a
+                onClick={() => updateCurrentPlayer(player)}
+                className="list_link"
+              >
                 {player.firstName} {player.lastName}
               </a>
             </li>

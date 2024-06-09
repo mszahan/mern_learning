@@ -1,1 +1,179 @@
+.container {
+  background-color: #c9d1d4;
+  padding: 2rem;
+}
 
+.container .title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #092635;
+}
+
+.players {
+  display: flex;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.players .player_list {
+  width: 35%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.player_list .list_title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-block: 0.5rem;
+  border-bottom: 1px dashed black;
+  margin-bottom: 1rem;
+}
+
+.list_container .list_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.list_list .list_individual {
+  cursor: pointer;
+  width: 60%;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.list_list .list_individual:hover {
+  background-color: #6295a211;
+}
+
+.players .player_info {
+  width: 65%;
+  padding: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.player_info .player_detail {
+  display: flex;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 20rem;
+}
+
+.player_detail .side_image {
+  width: 35%;
+  background-image: url(https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: bottom center;
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.player_detail .detail_container {
+  width: 65%;
+  padding: 2rem;
+}
+
+.detail_container .name {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.contact p {
+  margin: 0.5rem;
+}
+
+.detail_container .stats {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stats .stat_value {
+  text-align: center;
+  /* padding: 2px; */
+}
+
+.stats .stat_value:hover {
+  background-color: #6295a211;
+  border-radius: 10px;
+}
+
+.stats .stat_icon {
+  font-size: 2rem;
+  color: #538392;
+}
+
+.player_info .player_form {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.player_form .form_title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #092635;
+  border-bottom: 1px dashed #538392;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+/* .form {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+.form div {
+  margin: 0.5rem;
+}
+
+.form .name,
+.form .contacts {
+  display: flex;
+  gap: 2rem;
+}
+
+.name div,
+.contacts div,
+.stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name input[type="text"],
+.contacts input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #092635;
+}
+
+.stats input[type="text"] {
+  width: 52%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #092635;
+}
+
+.submit-button {
+  margin-left: 1rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #092635;
+}
+
+.submit-button:hover {
+  border: 1px solid #092635;
+  background-color: #fff;
+  color: #092635;
+}
