@@ -12,6 +12,7 @@ class App extends React.Component {
       players: [],
       currentPlayer: {},
     };
+    this.updateCurrentPlayer = this.updateCurrentPlayer.bind(this);
   }
 
   componentDidMount() {
