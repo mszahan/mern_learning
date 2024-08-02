@@ -9,6 +9,10 @@
   "author": "mszahan",
   "license": "ISC",
   "dependencies": {
+    "mongoose": "^8.5.2",
     "underscore": "^1.13.7"
+  },
+  "devDependencies": {
+    "jshint": "^2.13.6"
   }
 }
