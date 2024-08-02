@@ -1,8 +1,14 @@
+const EventEmitter = require("events");
+const emitter = new EventEmitter();
+
 var url = "http://mylogger.com/log";
 
 function log(message) {
   // send an http request
   console.log(message);
+
+  // Raise and event
+  emitter.emit("messagedLogged", { id: 1, url: "https://" });
 }
 
 // you can name anything for exports.any_name_
