@@ -4,7 +4,14 @@ import Layout from "./layouts/Layout";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />} />
+      <Route
+        path="/"
+        element={
+          <Layout>
+            <p>Homepage</p>
+          </Layout>
+        }
+      />
     </Routes>
   );
 }
