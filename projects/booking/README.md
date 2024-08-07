@@ -21,7 +21,7 @@ npm i -D @types/cors @types/express @types/node ts-node typescript nodemon
 
 ```
 
-#### if mongo doesnt connect add this to ip (danger)
+#### if mongo doesnt connect, add this to ip (danger)
 
 ```
 0.0.0.0/0
