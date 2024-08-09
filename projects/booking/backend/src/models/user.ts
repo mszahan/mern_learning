@@ -16,5 +16,13 @@ const userSchema = new mongoose.Schema({
   lastName: { type: String, required: true },
 });
 
+// encripting password before saving it
+userSchema.pre("save", async function (next) {
+  if (this.isModified("password")) {
+    this.password = await bcrypt.hash(this.password, 8);
+  }
+  next();
+});
+
 const User = mongoose.model<UserType>("User", userSchema);
 export default User;
